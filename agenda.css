@@ -3,6 +3,7 @@
 body {
   margin: inherit;
   font-family: 'Montserrat', sans-serif;
+  /* background-color: #E0E0E0 */
 }
 
 main {
@@ -10,16 +11,17 @@ main {
 }
 
 table.calendar {
-  /* background-color: #a6e3e9; */
-  width: 80%;
-  height: 80%;
+  background-color: #a6e3e9;
+  width: 70%;
+  /* height: 20vh; */
   padding: 1rem;
   text-align: center;
   table-layout: fixed;
   border-spacing: 5px;
   border-collapse: collapse;
   position: relative;
-  left: 10%;
+  left: 25%;
+  top: 10vh;;
 }
 
 table.calendar td, table.calendar th {
@@ -32,7 +34,7 @@ table.calendar tbody td {
   color: lightcoral;
   font-weight: bold;
   /* border: 1px solid #F0F0F0; */
-  border: 1px solid black;
+  border: 2px solid white;
 }
 
 table.calendar tr:nth-child(even) {
@@ -47,23 +49,15 @@ table.calendar thead th {
   font-size: 1.5rem;
   font-weight: 600;
   color: #E6E6E6;
-  /* border: 1px solid #F0F0F0; */
-  border: 1px solid black;
+  border: 2px solid white;
 }
 
-table.calendar thead th:first-child {
-  /* border: 1px black solid; */
-}
+table.calendar thead th:first-child {}
 
-table.calendar tr td:first-child {
-  /* border: 1px black solid; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-}
+table.calendar tr td:first-child {}
 
-.project, .workshop, .personnal {
-  border-radius: 1rem;
+.project, .workshop, .personnal, .activities, .lunch {
+  border-radius: 16px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -74,4 +68,18 @@ table.calendar tr td:first-child {
   background-color: purple;
 }
 
-.workshop {}
+.workshop {
+  background-color: #F6D56E;
+}
+
+.personnal {
+  background-color: #6EF6A1;
+}
+
+.activities {
+  background-color: #6EF6E2;
+}
+
+.lunch{
+  background-color: #756EF6;
+}
