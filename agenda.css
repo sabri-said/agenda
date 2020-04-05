@@ -9,17 +9,62 @@ body {
 main {
   /* min-height: 100vh; */
   display: flex;
+  flex-direction: row;
 }
 
 .month-schedule {
   flex: 1;
+  margin: 0.5rem;
 }
 
 .week-schedule {
   flex: 4;
 }
 
+table.month-calendar {
+  /* background: #FF0000; */
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  height: 30%;
+  border-collapse: collapse;
+  /* padding: 1rem; */
+}
 
+table.month-calendar td, table.month-calendar th {
+  border-left: solid thin #E2E2E2;
+  border-bottom: solid thin #E2E2E2;
+}
+
+table.month-calendar th {
+  padding-top: 0.5rem;
+  color: #595959;
+}
+
+table.month-calendar thead th:first-child,
+table.month-calendar tr td:first-child {
+  border-left: none;
+}
+
+table.month-calendar tr:last-child td {
+  border-bottom: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+a:hover {
+  font-weight: 600;
+  background-color: #E2E2E2;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* ================================================================================
+=================================================================================== */
 table.week-calendar {
   background-color: #a6e3e9;
   width: 100%;
