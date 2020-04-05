@@ -3,11 +3,9 @@
 body {
   margin: inherit;
   font-family: 'Montserrat', sans-serif;
-  /* background-color: #E0E0E0 */
 }
 
-main {
-  /* min-height: 100vh; */
+.global-schedule {
   display: flex;
   flex-direction: row;
 }
@@ -131,4 +129,78 @@ table.week-calendar tr td:first-child {}
 
 .lunch {
   background-color: #756EF6;
+}
+
+/* ================================================================================
+================================================================================ */
+.form-event {
+  background-color: #595959;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+
+textarea {
+  height: 20vh;
+}
+
+.form-input, .form-select {
+  margin-bottom: 32px;
+  width: 80%;
+}
+
+label, input {
+  display: flex;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+}
+
+input, select, textarea {
+  outline: none;
+  width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  box-shadow: none,
+}
+
+input {
+  box-sizing: border-box;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #329e5e;
+}
+
+#submit {
+  background: #329e5e;
+  color: #fff;
+  text-align: center;
+}
+
+#submit:hover {
+  background-color: #267747;
 }

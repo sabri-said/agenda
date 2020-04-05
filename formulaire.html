@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="agenda.css">
+    <title>Ajouter un Evenement</title>
+  </head>
+
+  <body>
+
+    <header></header>
+
+    <main>
+      <div class="form-event">
+        <form action="agenda.html">
+          <div class="form-input">
+            <label for="event-name" class="required">Nom de l'évènement</label>
+            <input type="text" id="event-name">
+          </div>
+          <div class="form-input">
+            <label for="event-date">Date de l'évenement</label>
+            <input type="datetime-local" id="event-date">
+          </div>
+          <div class="form-select">
+            <label for="event-type">Catégorie</label>
+            <div class="select-list">
+              <select id="event-type">
+                <option>Choisir une catégorie</option>
+                <option>Personnel</option>
+                <option>Workshop</option>
+                <option>Acivités</option>
+                <option>Projets</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-input" id="form-input-textarea">
+            <label for="description">Description de l'évènement</label>
+            <textarea id="description"></textarea>
+          </div>
+          <div class="form-submit">
+            <input type="submit" value="Ajouter l'évenement" class="submit" id="submit">
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer></footer>
+
+  </body>
+
+</html>
