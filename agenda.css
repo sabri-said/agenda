@@ -108,23 +108,26 @@ table.week-calendar tr td:first-child {}
 .event-category {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px
+  margin-bottom: 32px;
+  margin-left: 8
 }
 
 .event-group {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-bottom: 16px
 }
 
-.project-event,
-.how-to-event,
-.personnal-event,
-.activities-event,
-.lunch-event {
+.project-event-color,
+.how-to-event-color,
+.personnal-event-color,
+.activities-event-color,
+.lunch-event-color {
   width: 24px;
   height: 24px;
   border-radius: 8px;
+  margin-right: 16px;
 }
 
 .project, .how-to, .personnal, .activities, .lunch {
@@ -135,23 +138,23 @@ table.week-calendar tr td:first-child {}
   justify-content: center;
 }
 
-.project, .project-event {
+.project, .project-event-color {
   background-color: purple;
 }
 
-.how-to, .how-to-event {
+.how-to, .how-to-event-color {
   background-color: #F6D56E;
 }
 
-.personnal, .personnal-event {
+.personnal, .personnal-event-color {
   background-color: #6EF6A1;
 }
 
-.activities, .activities-event {
+.activities, .activities-event-color {
   background-color: #6EF6E2;
 }
 
-.lunch, .lunch-event {
+.lunch, .lunch-event-color {
   background-color: #756EF6;
 }
 
@@ -219,12 +222,19 @@ input:focus, textarea:focus {
   border: 1px solid #329e5e;
 }
 
-#submit {
+.form-schedule {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.submit {
   background: #329e5e;
   color: #fff;
   text-align: center;
 }
 
-#submit:hover {
+.submit:hover {
   background-color: #267747;
 }

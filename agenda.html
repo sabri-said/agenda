@@ -76,27 +76,31 @@
           </table>
           <div class="event-category">
             <div class="event-group">
-              <div class="project-event"></div>
+              <div class="project-event-color"></div>
               <div class="event-type">Projet</div>
             </div>
             <div class="event-group">
-              <div class="how-to-event"></div>
+              <div class="how-to-event-color"></div>
               <div class="event-type">How-to</div>
             </div>
             <div class="event-group">
-              <div class="personnal-event"></div>
+              <div class="personnal-event-color"></div>
               <div class="event-type">Personnel</div>
             </div>
             <div class="event-group">
-              <div class="activities-event"></div>
+              <div class="activities-event-color"></div>
               <div class="event-type">Activités</div>
             </div>
             <div class="event-group">
-              <div class="lunch-event"></div>
+              <div class="lunch-event-color"></div>
               <div class="event-type">Déjeuner</div>
             </div>
           </div>
-          <button type="button" name="button" id="addEvent">Ajouter un évènement</button>
+          <form class="form-schedule" action="formulaire.html" method="post">
+            <div class="form-submit">
+              <input type="submit" value="Ajouter un évènement" class="submit">
+            </div>
+          </form>
         </div>
         <div class="week-container-group">
           <table class="week-calendar">
@@ -313,12 +317,6 @@
     </main>
 
     <footer></footer>
-    <script type="text/javascript">
-    document.getElementById("addEvent").onclick = function() {
-      location.href = "formulaire.html";
-    };
-
-    </script>
 
   </body>
 
